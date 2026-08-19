@@ -67,11 +67,9 @@ class TimeframeEngine:
 
     ENGINE_NAME = "MT5 TIMEFRAME ENGINE"
     VERSION = "2.2.0"
-
-    MODE = "READ-ONLY"
+    MODE = "READ_ONLY"
     EXECUTION_ENABLED = False
     SIMULATION_ENABLED = False
-
     # ==================================================================
     # MT5 TIMEFRAME CONSTANTS
     # ==================================================================
@@ -1712,3 +1710,6 @@ class TimeframeEngine:
 __all__ = [
     "TimeframeEngine",
 ]
+
+
+

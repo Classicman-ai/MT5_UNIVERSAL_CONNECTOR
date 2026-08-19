@@ -1,4 +1,4 @@
-"""
+﻿"""
 MT5 UNIVERSAL CONNECTOR
 PHASE 0 - CONNECTOR -> TIMEFRAME ENGINE
 
@@ -241,22 +241,6 @@ def main() -> None:
             f"Engine Status : "
             f"{getattr(engine, 'initialized', 'UNKNOWN')}"
         )
-
-        print(
-            f"Mode          : "
-            f"{getattr(engine, 'MODE', 'UNKNOWN')}"
-        )
-
-        print(
-            f"Execution     : "
-            f"{getattr(engine, 'EXECUTION_ENABLED', False)}"
-        )
-
-        print(
-            f"Simulation    : "
-            f"{getattr(engine, 'SIMULATION_ENABLED', False)}"
-        )
-
         print(
             f"Requested     : "
             f"{symbol}"
@@ -647,10 +631,6 @@ def main() -> None:
         print("SOURCE        : REAL MT5 MARKET DATA")
         print("CONNECTION    : MT5Connector")
         print("TIMEFRAME     : TimeframeEngine")
-        print("MODE          : READ-ONLY")
-        print("EXECUTION     : DISABLED")
-        print("SIMULATION    : DISABLED")
-
     except KeyboardInterrupt:
 
         print()
